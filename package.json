@@ -8,7 +8,7 @@
       "name": "Gaël Reyrol <me@gaelreyrol.com>"
     }
   ],
-  "main": "lib/module.js",
+  "main": "lib/rollbar.js",
   "repository": "https://github.com/Zevran/nuxt-rollbar-module",
   "publishConfig": {
     "access": "public"
@@ -30,7 +30,9 @@
     "collectCoverage": true
   },
   "dependencies": {
-    "rollbar": "^2.4.5"
+    "consola": "^1.4.3",
+    "rollbar": "^2.4.5",
+    "vue-rollbar": "^0.2.2"
   },
   "devDependencies": {
     "nuxt": "latest",
