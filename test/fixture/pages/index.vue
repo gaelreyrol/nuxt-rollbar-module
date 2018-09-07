@@ -1,11 +1,13 @@
 <template>
 <div>
-    Works!
+  Works!
 </div>
 </template>
 
 <script>
 export default {
-
+  mounted() {
+    this.rollbar.debug('YoHo !')
+  }
 }
 </script>
