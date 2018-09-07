@@ -27,7 +27,10 @@
   ],
   "jest": {
     "testEnvironment": "node",
-    "collectCoverage": true
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ]
   },
   "dependencies": {
     "consola": "^1.4.3",
@@ -35,8 +38,8 @@
     "vue-rollbar": "^0.2.2"
   },
   "devDependencies": {
-    "nuxt": "latest",
     "codecov": "latest",
+    "dotenv": "^6.0.0",
     "eslint": "latest",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",
@@ -47,6 +50,7 @@
     "eslint-plugin-vue": "latest",
     "jest": "latest",
     "jsdom": "latest",
+    "nuxt": "latest",
     "standard-version": "latest"
   }
 }
