@@ -1,7 +1,5 @@
 const { resolve } = require('path')
 
-require('dotenv').config()
-
 module.exports = {
   rootDir: resolve(__dirname, '../..'),
   srcDir: __dirname,
@@ -11,10 +9,8 @@ module.exports = {
   },
   modules: [
     ['@@', {
-      config: {
-        captureUncaught: true,
-        captureUnhandledRejections: true
-      }
+      serverAccessToken: 'serverAccessTokenWithArgs',
+      clientAccessToken: 'clientAccessTokenWithArgs'
     }]
   ]
 }
