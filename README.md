@@ -6,13 +6,7 @@
 [![Dependencies](https://david-dm.org/Zevran/nuxt-rollbar-module/status.svg?style=flat-square)](https://david-dm.org/Zevran/nuxt-rollbar-module)
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
 
-> Rollbar module for NuxtJS 
-
-[📖 **Release Notes**](./CHANGELOG.md)
-
-## Features
-
-The module features
+> Rollbar module for NuxtJS
 
 ## Setup
 - Add `nuxt-rollbar-module` dependency using yarn or npm to your project
@@ -25,14 +19,31 @@ The module features
     'nuxt-rollbar-module',
 
     // With options
-    ['nuxt-rollbar-module', { /* module options */ }],
+    ['nuxt-rollbar-module', {
+      serverAccessToken: 'YOUR_ROLLBAR_SERVER_TOKEN',
+      clientAccessToken: 'YOUR_ROLLBAR_CLIENT_TOKEN',
+      config: {
+        // Addtional config
+      }
+    }],
  ]
 }
 ```
 
 ## Usage
 
-Module Description
+Enter your project access tokens in the NuxtJS config file.
+See [Rollbar javascript documentation](https://rollbar.com/docs/notifier/rollbar.js/) for options.
+
+### Usage in Vue
+
+```javascript
+Vue.rollbar.debug('Yohyo!');
+// or in a vue component
+this.rollbar.debug('Yohyo!');
+```
+
+## Options
 
 ## Development
 
@@ -44,4 +55,4 @@ Module Description
 
 [MIT License](./LICENSE)
 
-Copyright (c) Gaël Reyrol <gael@soyhuce.fr>
+Copyright (c) Gaël Reyrol <me@gaelreyrol.com>
