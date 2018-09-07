@@ -1,4 +1,5 @@
 # nuxt-rollbar-module
+
 [![npm (scoped with tag)](https://img.shields.io/npm/v/nuxt-rollbar-module/latest.svg?style=flat-square)](https://npmjs.com/package/nuxt-rollbar-module)
 [![npm](https://img.shields.io/npm/dt/nuxt-rollbar-module.svg?style=flat-square)](https://npmjs.com/package/nuxt-rollbar-module)
 [![CircleCI](https://img.shields.io/circleci/project/github/Zevran/nuxt-rollbar-module.svg?style=flat-square)](https://circleci.com/gh/Zevran/nuxt-rollbar-module)
@@ -9,7 +10,14 @@
 > Rollbar module for NuxtJS
 
 ## Setup
+
 - Add `nuxt-rollbar-module` dependency using yarn or npm to your project
+
+```shell
+npm install --save nuxt-rollbar-module
+yarn add nuxt-rollbar-module
+```
+
 - Add `nuxt-rollbar-module` to `modules` section of `nuxt.config.js`
 
 ```js
@@ -37,7 +45,7 @@ See [Rollbar javascript documentation](https://rollbar.com/docs/notifier/rollbar
 
 ### Usage in Vue
 
-```javascript
+```js
 Vue.rollbar.debug('Yohyo!');
 // or in a vue component
 this.rollbar.debug('Yohyo!');
