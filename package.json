@@ -1,6 +1,6 @@
 {
   "name": "nuxt-rollbar-module",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "description": "Rollbar module for NuxtJS ",
   "license": "MIT",
   "contributors": [
