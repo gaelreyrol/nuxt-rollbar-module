@@ -35,7 +35,6 @@
   "dependencies": {
     "consola": "^2.3.2",
     "rollbar": "^2.5.2",
-    "vue-rollbar": "^0.2.4"
   },
   "devDependencies": {
     "codecov": "latest",
