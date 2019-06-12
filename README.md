@@ -24,20 +24,20 @@ yarn add nuxt-rollbar-module
 {
   modules: [
     // Simple usage
-    "nuxt-rollbar-module",
+    'nuxt-rollbar-module',
 
     // With options
     [
-      "nuxt-rollbar-module",
+      'nuxt-rollbar-module',
       {
-        serverAccessToken: "YOUR_ROLLBAR_SERVER_TOKEN",
-        clientAccessToken: "YOUR_ROLLBAR_CLIENT_TOKEN",
+        serverAccessToken: 'YOUR_ROLLBAR_SERVER_TOKEN',
+        clientAccessToken: 'YOUR_ROLLBAR_CLIENT_TOKEN',
         config: {
           // Addtional config
         }
       }
     ]
-  ];
+  ]
 }
 ```
 
@@ -49,9 +49,9 @@ See [Rollbar javascript documentation](https://rollbar.com/docs/notifier/rollbar
 ### Usage in Vue.js
 
 ```js
-Vue.rollbar.debug("Yohyo!");
+Vue.rollbar.debug('Yohyo!')
 // or in a vue component
-this.$rollbar.debug("Yohyo!");
+this.$rollbar.debug('Yohyo!')
 ```
 
 ### Usage in Nuxt.js
@@ -60,27 +60,27 @@ this.$rollbar.debug("Yohyo!");
 export default {
   asyncData(context) {
     // called by only server side
-    context.$rollbar.debug("Yohyo!");
+    context.$rollbar.debug('Yohyo!')
   },
 
   created() {
     // called by both server side and client side
-    this.$rollbar.debug("Yohyo!");
+    this.$rollbar.debug('Yohyo!')
 
     if (process.server) {
-      this.$rollbar.debug("from server side");
+      this.$rollbar.debug('from server side')
     }
 
     if (process.client) {
-      this.$rollbar.debug("from client side");
+      this.$rollbar.debug('from client side')
     }
   },
 
   mounted() {
     // called by only client side
-    this.$rollbar.debug("Yohyo!");
+    this.$rollbar.debug('Yohyo!')
   }
-};
+}
 ```
 
 ## Options

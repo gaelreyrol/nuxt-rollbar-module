@@ -10,11 +10,14 @@ module.exports = {
     resourceHints: false
   },
   modules: [
-    ['@@', {
-      config: {
-        captureUncaught: true,
-        captureUnhandledRejections: true
+    [
+      '@@',
+      {
+        config: {
+          captureUncaught: true,
+          captureUnhandledRejections: true
+        }
       }
-    }]
+    ]
   ]
 }
