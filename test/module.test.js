@@ -24,7 +24,7 @@ describe('withEnv', () => {
   })
 
   test('render', async () => {
-    let html = await get('/')
+    const html = await get('/')
     expect(html).toContain('Works!')
   })
 })
@@ -45,7 +45,7 @@ describe('withArgs', () => {
   })
 
   test('render', async () => {
-    let html = await get('/')
+    const html = await get('/')
     expect(html).toContain('Works!')
   })
 })
@@ -66,7 +66,7 @@ describe('withOptions', () => {
   })
 
   test('render', async () => {
-    let html = await get('/')
+    const html = await get('/')
     expect(html).toContain('Works!')
   })
 })
