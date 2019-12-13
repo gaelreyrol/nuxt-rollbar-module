@@ -33,12 +33,12 @@
     ]
   },
   "dependencies": {
-    "consola": "^2.7.1",
-    "rollbar": "^2.7.1"
+    "consola": "^2.11.0",
+    "rollbar": "^2.14.4"
   },
   "devDependencies": {
     "codecov": "latest",
-    "dotenv": "^8.0.0",
+    "dotenv": "latest",
     "eslint": "latest",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",

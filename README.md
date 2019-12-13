@@ -2,9 +2,9 @@
 
 [![npm (scoped with tag)](https://img.shields.io/npm/v/nuxt-rollbar-module/latest.svg?style=flat-square)](https://npmjs.com/package/nuxt-rollbar-module)
 [![npm](https://img.shields.io/npm/dt/nuxt-rollbar-module.svg?style=flat-square)](https://npmjs.com/package/nuxt-rollbar-module)
-[![CircleCI](https://img.shields.io/circleci/project/github/Zevran/nuxt-rollbar-module.svg?style=flat-square)](https://circleci.com/gh/Zevran/nuxt-rollbar-module)
-[![Codecov](https://img.shields.io/codecov/c/github/Zevran/nuxt-rollbar-module.svg?style=flat-square)](https://codecov.io/gh/Zevran/nuxt-rollbar-module)
-[![Dependencies](https://david-dm.org/Zevran/nuxt-rollbar-module/status.svg?style=flat-square)](https://david-dm.org/Zevran/nuxt-rollbar-module)
+[![CircleCI](https://img.shields.io/circleci/project/github/Zevran/nuxt-rollbar-module.svg?style=flat-square)](https://circleci.com/gh/gaelreyrol/nuxt-rollbar-module)
+[![Codecov](https://img.shields.io/codecov/c/github/Zevran/nuxt-rollbar-module.svg?style=flat-square)](https://codecov.io/gh/gaelreyrol/nuxt-rollbar-module)
+[![Dependencies](https://david-dm.org/Zevran/nuxt-rollbar-module/status.svg?style=flat-square)](https://david-dm.org/gaelreyrol/nuxt-rollbar-module)
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
 
 > Rollbar module for NuxtJS
