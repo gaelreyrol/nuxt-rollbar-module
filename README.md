@@ -27,14 +27,17 @@ yarn add nuxt-rollbar-module
     'nuxt-rollbar-module',
 
     // With options
-    ['nuxt-rollbar-module', {
-      serverAccessToken: 'YOUR_ROLLBAR_SERVER_TOKEN',
-      clientAccessToken: 'YOUR_ROLLBAR_CLIENT_TOKEN',
-      config: {
-        // Addtional config
+    [
+      'nuxt-rollbar-module',
+      {
+        serverAccessToken: 'YOUR_ROLLBAR_SERVER_TOKEN',
+        clientAccessToken: 'YOUR_ROLLBAR_CLIENT_TOKEN',
+        config: {
+          // Addtional config
+        }
       }
-    }],
- ]
+    ]
+  ]
 }
 ```
 
@@ -43,12 +46,41 @@ yarn add nuxt-rollbar-module
 Enter your project access tokens in the NuxtJS config file.
 See [Rollbar javascript documentation](https://rollbar.com/docs/notifier/rollbar.js/) for options.
 
-### Usage in Vue
+### Usage in Vue.js
 
 ```js
-Vue.rollbar.debug('Yohyo!');
+Vue.rollbar.debug('Yohyo!')
 // or in a vue component
-this.rollbar.debug('Yohyo!');
+this.$rollbar.debug('Yohyo!')
+```
+
+### Usage in Nuxt.js
+
+```js
+export default {
+  asyncData(context) {
+    // called by only server side
+    context.$rollbar.debug('Yohyo!')
+  },
+
+  created() {
+    // called by both server side and client side
+    this.$rollbar.debug('Yohyo!')
+
+    if (process.server) {
+      this.$rollbar.debug('from server side')
+    }
+
+    if (process.client) {
+      this.$rollbar.debug('from client side')
+    }
+  },
+
+  mounted() {
+    // called by only client side
+    this.$rollbar.debug('Yohyo!')
+  }
+}
 ```
 
 ## Options

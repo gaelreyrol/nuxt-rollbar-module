@@ -33,13 +33,12 @@
     ]
   },
   "dependencies": {
-    "consola": "^2.3.2",
-    "rollbar": "^2.5.2",
-    "vue-rollbar": "^0.2.4"
+    "consola": "^2.7.1",
+    "rollbar": "^2.7.1"
   },
   "devDependencies": {
     "codecov": "latest",
-    "dotenv": "^6.2.0",
+    "dotenv": "^8.0.0",
     "eslint": "latest",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",

@@ -8,9 +8,12 @@ module.exports = {
     resourceHints: false
   },
   modules: [
-    ['@@', {
-      serverAccessToken: 'serverAccessTokenWithArgs',
-      clientAccessToken: 'clientAccessTokenWithArgs'
-    }]
+    [
+      '@@',
+      {
+        serverAccessToken: 'serverAccessTokenWithArgs',
+        clientAccessToken: 'clientAccessTokenWithArgs'
+      }
+    ]
   ]
 }
