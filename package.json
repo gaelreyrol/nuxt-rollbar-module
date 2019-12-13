@@ -9,7 +9,7 @@
     }
   ],
   "main": "lib/rollbar.js",
-  "repository": "https://github.com/Zevran/nuxt-rollbar-module",
+  "repository": "https://github.com/gaelreyrol/nuxt-rollbar-module",
   "publishConfig": {
     "access": "public"
   },
