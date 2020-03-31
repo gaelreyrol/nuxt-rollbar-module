@@ -23,7 +23,8 @@
     "lib/templates/*.*"
   ],
   "files": [
-    "lib"
+    "lib",
+    "types/*.d.ts"
   ],
   "jest": {
     "testEnvironment": "node",
@@ -51,5 +52,6 @@
     "jsdom": "latest",
     "nuxt": "latest",
     "standard-version": "latest"
-  }
+  },
+  "types": "types/index.d.ts"
 }
